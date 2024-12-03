@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Catch Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <div id="left-side" class="side">
+            <div class="catcher" id="left-catcher">
+                <div class="part" id="left-top"></div>
+                <div class="part" id="left-bottom"></div>
+            </div>
+        </div>
+        <div id="right-side" class="side">
+            <div class="catcher" id="right-catcher">
+                <div class="part" id="right-top"></div>
+                <div class="part" id="right-bottom"></div>
+            </div>
+        </div>
+        <div class="score"><span id="score">0</span></div>
+        <div class="lives">Lives: <span id="lives">3</span></div>
+        <div class="message" id="message"></div>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div id="game-over-modal" class="modal">
+        <div class="modal-content">
+            <h2>Game Over</h2>
+            <p>Your final score: <span id="final-score">0</span></p>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
